@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+
+<head>
+<title>Homepage</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<script type="text/javascript" src="js/jquery-1.7.js"></script>
+<script type="text/javascript" src="js/jcarousellite_1.0.1.min.js"></script>
+<!--[if IE 6]> <link rel="stylesheet" type="text/css" href="css/ie.css" /> <![endif]-->
+<script type="text/javascript">
+$(function() {
+    $(".gallery").jCarouselLite({
+        btnNext: ".next",
+        btnPrev: ".prev"
+    });
+});
+</script>
+</head>
+<body>
+
+<div id="leftcont">
+    <div id="leftimg"><a title="home" href="index.html"><img alt="image description" src="images/profile.jpg" /></a></div>
+    <div id="menu">
+        <ul>
+            <li><a title="link one" href="index.html">Home</a></li>
+            <li><a title="link two" href="publication.html">Publications</a></li>
+            <li><a title="link three" href="project.html">Projects</a></li>
+        </ul>
+    </div>
+  <div id="menu1">
+    <ul>
+      <li><a title="link four" href="KGSum.html">KGSum</a></li>
+      <li><a title="link five" href="AnsW.html">AnsW</a></li>
+      <li><a title="link six" href="TGNet.html">TGNet</a></li>
+    </ul>
+  </div>
+  <div id="menu">
+    <ul>
+      <li><a href="Files/songqi-en.pdf">Biography</a></li>
+    </ul>
+  </div>
+</div>
+
+<div id="main">
+	<div id="social"> 
+	<a href="https://twitter.com/Leo_Qi1990"> <img src="images/twitter.png" alt="" />  </a>
+	<a href="https://github.com/songqi1990"> <img src="images/github.png" alt="" /></a>
+	<a href="https://www.linkedin.com/in/qi-song-7b406940/"> <img src="images/linkedin.png" alt="" /></a>
+	</div> 
+	<div class="clr"></div>
+	<h1>Projects</h1>
+    
+    <p>Graphs are now been widely used in expressing world wide web, social network, knowledge base, biological structure, etc. Querying heterogeneous and large-scale graphs is expensive and writing queries to search these graphs is nevertheless a nontrivial task for end users. It is hard for end-users to write precise queries that will lead to meaningful answers without any prior knowledge of the underlying data graph. Users often need to revise the queries multiple times to find desirable answers. Given a large number of entities in the graph, users often require efficient predictive models that can effectively suggest the nodes with high priority. Exploring such graphs is challenging due to the ambiguity in queries, the inherent computational complexity (e.g., subgraph isomorphism) and resource constraints (e.g., response time) for large graphs.<br>
+    In order to solve these challenges, graph exploration has been introduced to perform exploratory analyses on graph data. My major research topic provides an exploratory graph search framework which helps users to perform effective and efficient exploratory searches on graph data. This framework includes following major contributions.
+	</p>
+	
+	<h2><a href="KGSum.html">Knowledge Graph Summarization (KGSum)</a></h2>
+	<h2><a href="AnsW.html">Answering Why-Questions in Attributed Graphs (AnsW)</a></h2>
+	<h2><a href="TGNet.html">Ranking Nodes in Temporal Graphs (TGNet)</a></h2>
+
+
+</div>
+
+</body>
+</html>
