@@ -1,76 +1,11 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html>
+<!doctype html>
+<html lang="zh-CN">
 
 <head>
-<title>Homepage of Qi Song</title>
+<title>宋骐</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <link rel="stylesheet" type="text/css" href="css/style.css" />
-<style type="text/css">
-#main .news-card {
-    margin: 0 0 25px;
-    border: 1px solid #dbe4ee;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 3px 12px rgba(30, 58, 86, .07);
-}
-#main .news-header {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: baseline;
-    justify-content: space-between;
-    gap: 0 1em;
-    padding: 8px 14px;
-    background: #f1f6fb;
-    border-bottom: 1px solid #dbe4ee;
-}
-#main .news-header h2 {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    color: #244664;
-    line-height: 1.5;
-}
-#main .news-hint {
-    color: #546d84;
-}
-#main .news-list {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    color: #263849;
-    font-size: 13px;
-    line-height: 20px;
-    max-height: 192px;
-    overflow-y: auto;
-    scrollbar-color: #7b93aa #f1f6fb;
-}
-#main .news-list:focus-visible {
-    outline: 2px solid #527da4;
-    outline-offset: -2px;
-}
-#main .news-list li {
-    display: grid;
-    grid-template-columns: 5.25em minmax(0, 1fr);
-    align-items: start;
-    gap: .75em;
-    padding: 6px 14px;
-    box-shadow: inset 0 -1px #e9eff5;
-    overflow-wrap: anywhere;
-}
-#main .news-list li:nth-child(even) {
-    background: #f8fafd;
-}
-#main .news-list time {
-    justify-self: start;
-    padding: 0 .55em;
-    border-radius: 1em;
-    background: #e7eff8;
-    color: #315575;
-    font-size: 12px;
-    font-weight: bold;
-    font-variant-numeric: tabular-nums;
-}
-</style>
 <script type="text/javascript" src="js/jquery-1.7.js"></script>
 <script type="text/javascript" src="js/jcarousellite_1.0.1.min.js"></script>
 <!--[if IE 6]> <link rel="stylesheet" type="text/css" href="css/ie.css" /> <![endif]-->
@@ -85,31 +20,31 @@ $(function() {
 </head>
 <body>
 
-<div id="leftcont">
-	<div id="leftimg"><a title="home" href="index.html"><img alt="image description" src="images/profile.jpg" /></a></div>
-	<div id="menu">
+<nav id="leftcont" aria-label="主导航">
+	<div id="leftimg"><a title="home" href="index.html"><img alt="宋骐" src="images/profile.jpg" /></a></div>
+	<div class="menu">
 		<ul>
-			<li><a title="link one" href="index.html">主页</a></li>
-			<li><a title="link two" href="publication.html">论文</a></li>
-            <li><a title="link three" href="teaching.html">教学</a></li>
+			<li><a aria-current="page" href="index-ch.html">主页</a></li>
+			<li><a href="publication.html">论文</a></li>
+            <li><a href="teaching.html">教学</a></li>
 		</ul>
 	</div>
-  <div id="menu">
+  <div class="menu">
     <ul>
       <li><a href="Files/songqi-en.pdf">个人简历</a></li>
     </ul>
   </div>
-</div>
+</nav>
 
-<div id="main">
+<main id="main">
 	<div id="social"> 
-	<a href="https://twitter.com/Leo_Qi1990"> <img src="images/twitter.png" alt="" />  </a>
-	<a href="https://github.com/songqi1990"> <img src="images/github.png" alt="" /></a>
-	<a href="https://www.linkedin.com/in/qi-song-7b406940/"> <img src="images/linkedin.png" alt="" /></a>
+	<a href="https://twitter.com/Leo_Qi1990"> <img src="images/twitter.png" alt="Twitter" />  </a>
+	<a href="https://github.com/songqi1990"> <img src="images/github.png" alt="GitHub" /></a>
+	<a href="https://www.linkedin.com/in/qi-song-7b406940/"> <img src="images/linkedin.png" alt="LinkedIn" /></a>
 	</div> 
 	<div class="clr"></div>
 	<h1>宋骐</h1> 
-    <h2><a href="index.html">[EN]</a></h2>
+    <a class="language-link" href="index.html">EN</a>
 	<p class="tag">
         中国科学技术大学特任教授，博士生导师，入选国家高层次人才计划（青年）。2020年于<a href="https://wsu.edu">华盛顿州立大学</a>获得博士学位<a href="https://search.proquest.com/openview/e557670944dd3d64795c1c3c31588ddb/1?pq-origsite=gscholar&cbl=18750&diss=y">[博士论文]</a>，师从<a href="https://yinghwu.github.io/">Yinghui Wu教授</a>。在此之前，分别于2015年和2012年于北京航空航天大学获得硕士与学士学位。
         博士毕业后加入亚马逊集团任应用科学家（Applied Scientist）。研究方向为数据挖掘与图机器学习，包括知识图谱、多模态数据融合与分析、知识驱动的智能计算等。<br>
@@ -125,7 +60,7 @@ $(function() {
       <ol class="news-list" role="list" tabindex="0" aria-labelledby="news-heading">
         <li><time datetime="2026-11">2026-11</time> <span>课题组3篇文章被KDD 2027录用，其中2篇research track，1篇AI4S track</span></li>
         <li><time datetime="2026-10">2026-10</time> <span>课题组徐一鸣同学获得硕士生国家奖学金</span></li>
-        <li><time datetime="2026-09">2026-09</time> <span>课题组1篇文章被BIBM 2027录用</span></li>
+        <li><time datetime="2026-09">2026-09</time> <span>课题组1篇文章被BIBM 2026录用</span></li>
         <li><time datetime="2026-09">2026-09</time> <span>课题组章宇航、徐一鸣同学入选中国科学技术大学急需紧缺领域博士培养工程</span></li>
         <li><time datetime="2026-08">2026-08</time> <span>课题组2篇文章被CIKM 2026录用</span></li>
         <li><time datetime="2026-08">2026-08</time> <span>课题组1篇文章被ICDM 2026录用</span></li>
@@ -141,39 +76,39 @@ $(function() {
           
 	<h2>代表性论文</h2>
 	<a href="publication.html">[Full List]</a> <a href="https://scholar.google.com/citations?user=HFGNmPsAAAAJ&hl=en">[Google Scholar]</a>
-        <ol>
+        <ol class="papers">
         <li>
-            <p>Knowledge-enhanced AI models for domain-specific application: a survey.&nbsp;<a href="https://www.sciengine.com/SCIS/doi/10.1007/s11432-025-4635-0">[Paper]</a><a href="https://github.com/yolanda-w98/Knowledge-enhanced-AI-models-for-domain-specific-application-a-survey">[Github]</a>
+            <p><strong class="paper-title">Knowledge-enhanced AI models for domain-specific application: a survey.</strong>&nbsp;<a href="https://www.sciengine.com/SCIS/doi/10.1007/s11432-025-4635-0">[Paper]</a><a href="https://github.com/yolanda-w98/Knowledge-enhanced-AI-models-for-domain-specific-application-a-survey">[Github]</a>
            <br>SCIENCE CHINA Information Sciences 中国科学：信息科学(<b>SCIS</b>),2025.<br>
             Xiang-Yang Li, Yihang Wang, Junli Liang, Xinyu Wang, Pengfei Zhou, Qi Zhao, Yuhang Zhang, Qi Song
         </li>
         <li>
-            <p>CrossLinear: Plug-and-Play Cross-Correlation Embedding for Time Series Forecasting with Exogenous Variables.&nbsp;<a href="https://arxiv.org/pdf/2505.23116">[Paper]</a><a href="Files/paper/KDD_slide.pdf">[Slide]</a>
+            <p><strong class="paper-title">CrossLinear: Plug-and-Play Cross-Correlation Embedding for Time Series Forecasting with Exogenous Variables.</strong>&nbsp;<a href="https://arxiv.org/pdf/2505.23116">[Paper]</a><a href="Files/paper/KDD_slide.pdf">[Slide]</a>
            <br>Proceedings of the 31th ACM SIGKDD Conference on Knowledge Discovery and Data Mining (<b>KDD</b>),2025.<br>
              Pengfei Zhou, Yunlong Liu, Junli Liang, Qi Song, Xiangyang Li
             </li>
         <li>
-            <p>Answering Why-Questions for Subgraph Queries.&nbsp;<a href=https://www.computer.org/csdl/journal/tk/5555/01/09302877/1pLFox0CNRS>[Paper]</a>
+            <p><strong class="paper-title">Answering Why-Questions for Subgraph Queries.</strong>&nbsp;<a href=https://www.computer.org/csdl/journal/tk/5555/01/09302877/1pLFox0CNRS>[Paper]</a>
            <br>IEEE Transactions on Knowledge and Data Engineering(<strong>TKDE</strong>), Vol.34 (Issue No. 10), 4636-4649, 2022.<br>
              <a href="https://songqi1990.github.io/">Qi Song</a>, <a href="https://eecs.wsu.edu/%7Emnamaki/">Mohammad Hossein Namaki</a>, <a href="https://eecs.wsu.edu/%7Eplin1/">Peng Lin</a>,   <a href="https://yinghwu.github.io/">Yinghui Wu</a></p>
         </li>
         <li>
-            <p>Explaining Missing Data in Graphs: A Constraint-based Approach.&nbsp;<a href="Files/paper/ICDE2021.pdf">[Paper]</a><a href="Files/paper/ICDE2021_slide.pdf">[Slide]</a>
+            <p><strong class="paper-title">Explaining Missing Data in Graphs: A Constraint-based Approach.</strong>&nbsp;<a href="Files/paper/ICDE2021.pdf">[Paper]</a><a href="Files/paper/ICDE2021_slide.pdf">[Slide]</a>
            <br>IEEE International Conference on Data Engineering (<b>ICDE</b>), 2021.<br>
              <a href="https://songqi1990.github.io/">Qi Song</a>, <a href="https://eecs.wsu.edu/%7Eplin1/">Peng Lin</a>, Hanchao Ma,  <a href="https://yinghwu.github.io/">Yinghui Wu</a></p>
         </li>
         <li>
-            <p>Answering Why-questions by Exemplars in Attributed Graphs.&nbsp;<a href="Files/paper/SIGMOD2019.pdf">[Paper]</a><a href="Files/paper/SIGMOD2019_slide.pdf">[Slide]</a><a href="Files/paper/SIGMOD2019_poster.pdf">[Poster]</a><a href="https://av.tib.eu/media/42988">[Talk]</a>
+            <p><strong class="paper-title">Answering Why-questions by Exemplars in Attributed Graphs.</strong>&nbsp;<a href="Files/paper/SIGMOD2019.pdf">[Paper]</a><a href="Files/paper/SIGMOD2019_slide.pdf">[Slide]</a><a href="Files/paper/SIGMOD2019_poster.pdf">[Poster]</a><a href="https://av.tib.eu/media/42988">[Talk]</a>
             <br>ACM SIGMOD Conference on Management of Data (<b>SIGMOD</b>), 2019.<br>
              <a href="https://eecs.wsu.edu/%7Emnamaki/">Mohammad Hossein Namaki</a>, <a href="https://songqi1990.github.io/">Qi Song</a>,  <a href="https://yinghwu.github.io/">Yinghui Wu</a>, <a href="https://www.linkedin.com/in/shengqi-yang-a9754643/">Shengqi Yang</a></p>
         </li>
         <li>
-            <p>Mining Summaries for Knowledge Graph Search.&nbsp;<a href="https://www.computer.org/csdl/trans/tk/2018/10/08300649-abs.html">[Paper]</a>
+            <p><strong class="paper-title">Mining Summaries for Knowledge Graph Search.</strong>&nbsp;<a href="https://www.computer.org/csdl/trans/tk/2018/10/08300649-abs.html">[Paper]</a>
             <br>IEEE Transactions on Knowledge and Data Engineering(<strong>TKDE</strong>), Vol.30 (Issue No. 10), 1887-1900, 2018.<br>
             <a href="https://songqi1990.github.io/">Qi Song</a>, <a href="https://yinghwu.github.io/">Yinghui Wu</a>, <a href="https://eecs.wsu.edu/%7Eplin1/">Peng Lin</a>, <a href="http://lunadong.com/">Luna Xin Dong</a>, Hui Sun</p>
         </li>
         <li>
-            <p>Deep Autoencoding Gaussian Mixture Model for Unsupervised Anomaly Detection.&nbsp;<a href="https://openreview.net/forum?id=BJJLHbb0-">[Paper]</a>
+            <p><strong class="paper-title">Deep Autoencoding Gaussian Mixture Model for Unsupervised Anomaly Detection.</strong>&nbsp;<a href="https://openreview.net/forum?id=BJJLHbb0-">[Paper]</a>
             <br>International Conference on Learning Representations(<strong>ICLR</strong>), 2018.<br>
             <a href="http://www.cs.ucsb.edu/~bzong/">Bo Zong</a>, <a href="https://songqi1990.github.io/">Qi Song</a>, <a href="http://www.nec-labs.com/martin-renqiang-min">Martin Renqiang Min</a>, <a href="http://www.nec-labs.com/wei-cheng">Wei Cheng</a>, <a href="http://www.nec-labs.com/cristian-lumezanu">Cristian Lumezanu</a>, <a href="https://www.linkedin.com/in/daeki-cho-69b6126/">Daeki Cho</a>, <a href="http://www.nec-labs.com/haifeng-chen">Haifeng Chen</a>
         </li>
@@ -246,7 +181,7 @@ $(function() {
             <li>EDBT student travel grant for <a href="http://edbt2015school.win.tue.nl">EDBT summer school 2015, Palamos Spain</a></li>
             <li>MediaTek Inc. - Beihang Univ. Science and Technology Award 2014</li>
       </ol>
-</div>
+</main>
 
 </body>
 </html>

@@ -1,8 +1,9 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html>
+<!doctype html>
+<html lang="en">
 
 <head>
-<title>Homepage</title>
+<title>Computer Networks · Qi Song</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <link rel="stylesheet" type="text/css" href="css/style.css" />
 <script type="text/javascript" src="js/jquery-1.7.js"></script>
@@ -19,33 +20,33 @@ $(function() {
 </head>
 <body>
 
-<div id="leftcont">
-    <div id="leftimg"><a title="home" href="index.html"><img alt="image description" src="images/profile.jpg" /></a></div>
-    <div id="menu">
+<nav id="leftcont" aria-label="Main navigation">
+    <div id="leftimg"><a title="home" href="index.html"><img alt="Qi Song" src="images/profile.jpg" /></a></div>
+    <div class="menu">
         <ul>
-            <li><a title="link one" href="index.html">Home</a></li>
-            <li><a title="link two" href="publication.html">Publications</a></li>
-            <li><a title="link three" href="teaching.html">Teaching</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="publication.html">Publications</a></li>
+            <li><a aria-current="location" href="teaching.html">Teaching</a></li>
         </ul>
     </div>
-  <div id="menu">
+  <div class="menu">
     <ul>
       <li><a href="Files/songqi-en.pdf">Biography</a></li>
     </ul>
   </div>
-</div>
+</nav>
 
-<div id="main">
+<main id="main">
 	<div id="social"> 
-	<a href="https://twitter.com/Leo_Qi1990"> <img src="images/twitter.png" alt="" />  </a>
-	<a href="https://github.com/songqi1990"> <img src="images/github.png" alt="" /></a>
-	<a href="https://www.linkedin.com/in/qi-song-7b406940/"> <img src="images/linkedin.png" alt="" /></a>
+	<a href="https://twitter.com/Leo_Qi1990"> <img src="images/twitter.png" alt="Twitter" />  </a>
+	<a href="https://github.com/songqi1990"> <img src="images/github.png" alt="GitHub" /></a>
+	<a href="https://www.linkedin.com/in/qi-song-7b406940/"> <img src="images/linkedin.png" alt="LinkedIn" /></a>
 	</div> 
 	<div class="clr"></div>
-	<h1>Teaching</h1>
+	<h1>Computer Networks</h1>
     
-        <div style="text-align: justify;">
-          <div style="margin-left: 40px;">East Campus 1101: 6(6,7,8,9), week 1-15.<br>
+        <div class="course-details">
+          <div>East Campus 1101: 6(6,7,8,9), week 1-15.<br>
             <br>
             
 
@@ -86,7 +87,7 @@ $(function() {
         </div>
         
         
-</div>
+</main>
 
 </body>
 </html>
