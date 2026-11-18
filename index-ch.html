@@ -5,6 +5,72 @@
 <title>Homepage of Qi Song</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <link rel="stylesheet" type="text/css" href="css/style.css" />
+<style type="text/css">
+#main .news-card {
+    margin: 0 0 25px;
+    border: 1px solid #dbe4ee;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 3px 12px rgba(30, 58, 86, .07);
+}
+#main .news-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 0 1em;
+    padding: 8px 14px;
+    background: #f1f6fb;
+    border-bottom: 1px solid #dbe4ee;
+}
+#main .news-header h2 {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    color: #244664;
+    line-height: 1.5;
+}
+#main .news-hint {
+    color: #546d84;
+}
+#main .news-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    color: #263849;
+    font-size: 13px;
+    line-height: 20px;
+    max-height: 192px;
+    overflow-y: auto;
+    scrollbar-color: #7b93aa #f1f6fb;
+}
+#main .news-list:focus-visible {
+    outline: 2px solid #527da4;
+    outline-offset: -2px;
+}
+#main .news-list li {
+    display: grid;
+    grid-template-columns: 5.25em minmax(0, 1fr);
+    align-items: start;
+    gap: .75em;
+    padding: 6px 14px;
+    box-shadow: inset 0 -1px #e9eff5;
+    overflow-wrap: anywhere;
+}
+#main .news-list li:nth-child(even) {
+    background: #f8fafd;
+}
+#main .news-list time {
+    justify-self: start;
+    padding: 0 .55em;
+    border-radius: 1em;
+    background: #e7eff8;
+    color: #315575;
+    font-size: 12px;
+    font-weight: bold;
+    font-variant-numeric: tabular-nums;
+}
+</style>
 <script type="text/javascript" src="js/jquery-1.7.js"></script>
 <script type="text/javascript" src="js/jcarousellite_1.0.1.min.js"></script>
 <!--[if IE 6]> <link rel="stylesheet" type="text/css" href="css/ie.css" /> <![endif]-->
@@ -49,7 +115,29 @@ $(function() {
         博士毕业后加入亚马逊集团任应用科学家（Applied Scientist）。研究方向为数据挖掘与图机器学习，包括知识图谱、多模态数据融合与分析、知识驱动的智能计算等。<br>
 	
   Email: qisong09(at)ustc.edu.cn</p>
-          
+     
+
+     <div class="news-card">
+      <div class="news-header">
+        <h2 id="news-heading">News</h2>
+        <span class="news-hint">↓ 向下滚动查看更多</span>
+      </div>
+      <ol class="news-list" role="list" tabindex="0" aria-labelledby="news-heading">
+        <li><time datetime="2026-11">2026-11</time> <span>课题组3篇文章被KDD 2027录用，其中2篇research track，1篇AI4S track</span></li>
+        <li><time datetime="2026-10">2026-10</time> <span>课题组徐一鸣同学获得硕士生国家奖学金</span></li>
+        <li><time datetime="2026-09">2026-09</time> <span>课题组1篇文章被BIBM 2027录用</span></li>
+        <li><time datetime="2026-09">2026-09</time> <span>课题组章宇航、徐一鸣同学入选中国科学技术大学急需紧缺领域博士培养工程</span></li>
+        <li><time datetime="2026-08">2026-08</time> <span>课题组2篇文章被CIKM 2026录用</span></li>
+        <li><time datetime="2026-08">2026-08</time> <span>课题组1篇文章被ICDM 2026录用</span></li>
+        <li><time datetime="2026-05">2026-05</time> <span>课题组王馨语同学获得中科院院长奖</span></li>
+        <li><time datetime="2026-05">2026-05</time> <span>课题组章宇航同学获得学科交叉中心“蛟龙奖学金”（二等）</span></li>
+        <li><time datetime="2025-10">2025-10</time> <span>课题组王馨语同学获得博士生国家奖学金</span></li>
+        <li><time datetime="2025-10">2025-10</time> <span>课题组王馨语同学获得学科交叉中心“蛟龙奖学金”（一等）</span></li>
+        <li><time datetime="2025-09">2025-09</time> <span>课题组郑岭同学入选中国科学技术大学急需紧缺领域博士培养工程</span></li>
+      </ol>
+     </div>
+
+      
           
 	<h2>代表性论文</h2>
 	<a href="publication.html">[Full List]</a> <a href="https://scholar.google.com/citations?user=HFGNmPsAAAAJ&hl=en">[Google Scholar]</a>
